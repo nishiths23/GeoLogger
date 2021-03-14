@@ -1,0 +1,26 @@
+name: Build and test
+
+on:
+  push:
+    branches: [ master ]
+  pull_request:
+    branches: [ master ]
+
+jobs:
+  build:
+    runs-on: macos-latest
+    steps:
+    - name: setup-cocoapods
+      uses: maxim-lobanov/setup-cocoapods@v1
+      with:
+        version: 1.10.1
+    - uses: actions/checkout@v2
+    - name: Install Dependencies
+      run: |
+        cd Example
+        pod install --repo-update
+      shell: bash
+    - name: Build and test
+      run: xcodebuild build test -derivedDataPath Build/ -enableCodeCoverage YES -workspace Example/GeoLogger.xcworkspace -scheme GeoLogger-Example -sdk iphonesimulator -destination 'platform=iOS Simulator,name=iPhone 8,OS=14.4' ONLY_ACTIVE_ARCH=NO
+    - name: Upload coverage to Codecov
+      run: bash <(curl -s https://codecov.io/bash)

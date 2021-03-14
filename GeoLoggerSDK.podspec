@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'GeoLoggerSDK'
-  s.version          = '1.0.0'
+  s.version          = '1.0.1'
   s.summary          = 'A package to log location events.'
 
 # This description is used to generate tags and improve search results.
@@ -25,7 +25,7 @@ Pod::Spec.new do |s|
   # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
   s.author           = { 'nishiths23' => 'nishithsingh23@ymail.com' }
-  s.source           = { :git => 'https://github.com/nishiths23/GeoLogger.git', :tag => '1.0.0' }
+  s.source           = { :git => 'https://github.com/nishiths23/GeoLogger.git', :tag => '1.0.1' }
   # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
 
   s.ios.deployment_target = '14.4'

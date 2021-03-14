@@ -1,6 +1,6 @@
 # GeoLogger
 
-[![CI Status](https://img.shields.io/travis/nishiths23/GeoLogger.svg?style=flat)](https://travis-ci.org/nishiths23/GeoLogger)
+[![Build and test](https://github.com/nishiths23/GeoLogger/actions/workflows/Build%20and%20test.yml/badge.svg)](https://github.com/nishiths23/GeoLogger/actions/workflows/Build%20and%20test.yml)
 [![Version](https://img.shields.io/cocoapods/v/GeoLoggerSDK.svg?style=flat)](https://cocoapods.org/pods/GeoLoggerSDK)
 [![License](https://img.shields.io/cocoapods/l/GeoLoggerSDK.svg?style=flat)](https://cocoapods.org/pods/GeoLoggerSDK)
 [![Platform](https://img.shields.io/cocoapods/p/GeoLoggerSDK.svg?style=flat)](https://cocoapods.org/pods/GeoLoggerSDK) 
@@ -46,13 +46,17 @@ You can modify the strings for these keys according to your project and requirem
 
 ## Usage
 
-### iOS
+### iOS and MacOS
 
 Additional steps are required to add background location access.
 
 - Go to your project -> Signing & Capabilities -> + Capability and add `Background Modes` capability
 - Tick `Location updates` checkbox
 
+#### Requirements
+
+##### Min iOS build target - iOS14.4
+##### Min MacOS build target - MacOS 11.0
 #### Implementation
 
  Add the following import at the top of your file
