@@ -1,0 +1,6 @@
+coverage_service: cobertura_xml
+workspace: Example/GeoLogger.xcworkspace
+scheme: GeoLogger-Example
+output_directory: reports
+ignore:
+  - Example/Tests/*

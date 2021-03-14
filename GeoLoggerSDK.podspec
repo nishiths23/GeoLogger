@@ -7,9 +7,9 @@
 #
 
 Pod::Spec.new do |s|
-  s.name             = 'GeoLogger'
-  s.version          = '0.1.0'
-  s.summary          = 'A short description of GeoLogger.'
+  s.name             = 'GeoLoggerSDK'
+  s.version          = '1.0.0'
+  s.summary          = 'A package to log location events.'
 
 # This description is used to generate tags and improve search results.
 #   * Think: What does it do? Why did you write it? What is the focus?
@@ -18,25 +18,33 @@ Pod::Spec.new do |s|
 #   * Finally, don't worry about the indent, CocoaPods strips it!
 
   s.description      = <<-DESC
-TODO: Add long description of the pod here.
-                       DESC
+  A package to log location events.
+  DESC
 
   s.homepage         = 'https://github.com/nishiths23/GeoLogger'
   # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
   s.author           = { 'nishiths23' => 'nishithsingh23@ymail.com' }
-  s.source           = { :git => 'https://github.com/nishiths23/GeoLogger.git', :tag => s.version.to_s }
+  s.source           = { :git => 'https://github.com/nishiths23/GeoLogger.git', :tag => '1.0.0' }
   # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
 
-  s.ios.deployment_target = '9.0'
+  s.ios.deployment_target = '14.4'
+  s.osx.deployment_target = '11.0'
 
-  s.source_files = 'GeoLogger/Classes/**/*'
+  s.source_files = 'GeoLogger/Classes/Sources/**/*'
   
   # s.resource_bundles = {
   #   'GeoLogger' => ['GeoLogger/Assets/*.png']
   # }
 
   # s.public_header_files = 'Pod/Classes/**/*.h'
-  # s.frameworks = 'UIKit', 'MapKit'
-  # s.dependency 'AFNetworking', '~> 2.3'
+  # s.frameworks = 'XCTest'
+  s.dependency 'Hippolyte'
+  s.dependency "Realm"
+  s.dependency 'RealmSwift'
+  s.test_spec 'Tests' do |test_spec|
+      test_spec.source_files = 'GeoLogger/Classes/Tests/**/*'
+      test_spec.frameworks = 'XCTest'
+      test_spec.dependency 'RealmSwift'
+  end
 end

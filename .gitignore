@@ -22,6 +22,19 @@ DerivedData
 # Bundler
 .bundle
 
+# Xcode
+xcuserdata/
+project.xcworkspace/
+DerivedData/
+
+# build products
+build/
+*.[oa]
+
+Example/Pods/*
+
+MacOsExample/GeoLoggerExampleMacOS/Pods/*
+
 # Add this line if you want to avoid checking in source code from Carthage dependencies.
 # Carthage/Checkouts
 

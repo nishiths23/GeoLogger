@@ -1,15 +1,10 @@
-use_frameworks!
+platform :macos, '11.0'
+use_modular_headers!
 
-platform :ios, '14.4'
-
-target 'GeoLogger_Example' do
+target 'GeoLoggerExampleMacOS' do
   pod 'GeoLoggerSDK',
-    :path => '../',
+    :path => '../../',
     :testspecs => ['Tests']
-
-  target 'GeoLogger_Tests' do
-    inherit! :search_paths
-  end
 end
 post_install do |installer|
     installer.pods_project.targets.each do |target|
