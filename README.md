@@ -4,7 +4,7 @@
 [![Version](https://img.shields.io/cocoapods/v/GeoLoggerSDK.svg?style=flat)](https://cocoapods.org/pods/GeoLoggerSDK)
 [![License](https://img.shields.io/cocoapods/l/GeoLoggerSDK.svg?style=flat)](https://cocoapods.org/pods/GeoLoggerSDK)
 [![Platform](https://img.shields.io/cocoapods/p/GeoLoggerSDK.svg?style=flat)](https://cocoapods.org/pods/GeoLoggerSDK) 
-[![codecov](https://codecov.io/gh/nishiths23/GeoLogger/branch/main/graph/badge.svg?token=iBd7Q8C9W7)](https://codecov.io/gh/nishiths23/GeoLogger)
+[![codecov](https://codecov.io/gh/nishiths23/GeoLogger/branch/master/graph/badge.svg?token=iBd7Q8C9W7)](https://codecov.io/gh/nishiths23/GeoLogger)
 
 
 ## Example
